@@ -2,14 +2,16 @@ function isOddNumber(number) {
     return number%2!= 0;
 }
 
-function countOddNumbers() {
+function countOddNumbers(numbers) {
     var count = 0;
-    for(i=0; i<numbers.length; i++) {
-        if(isOddNumber(numbers[i]))
+    for(index = 0; index < numbers.length; index++) {
+        if(isOddNumber(numbers[index]))
             count++;
     }
     return count;
 }
 
-var numbers = [1,2,4,5,7,19,21,10];
-console.log(countOddNumbers());
+{
+let numbers = [1,2,4,5,7,19,21,10];
+console.log(countOddNumbers(numbers));
+}

@@ -8,6 +8,6 @@ function generateLength(name) {
 }
 
 var names = ["teju","is","a","good","girl"];
-var lengths=[];
+var lengths = [];
 names.forEach(generateLength)
 console.log(lengths);
