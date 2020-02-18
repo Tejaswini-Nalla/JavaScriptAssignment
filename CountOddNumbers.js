@@ -1,5 +1,5 @@
 function isOddNumber(number) {
-    return number%2!= 0;
+    return number%2 != 0;
 }
 
 function countOddNumbers(numbers) {
