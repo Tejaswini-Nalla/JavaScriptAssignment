@@ -7,7 +7,7 @@ function addToList(number) {
 }
 
 function isOddNum(number) {
-    return number%2!=0;
+    return number%2 != 0;
 }
 
 function checkOddNum(number) {
