@@ -1,7 +1,7 @@
-function myfilter(mycallback,array) {
+function myFilter(myCallBack,array) {
     var returnValue = [];
     for(let index = 0; index < array.length; index++) {
-        if(mycallback(array[index])) {
+        if(myCallBack(array[index])) {
             returnValue.push(array[index]);
         }
     }
