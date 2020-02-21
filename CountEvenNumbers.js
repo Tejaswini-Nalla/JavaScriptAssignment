@@ -14,4 +14,8 @@ function countEvenNumbers(numbers) {
 {
 let numbers = [1,2,4,5,7,19,21,10,8];
 console.log(countEvenNumbers(numbers));
+
+//using built-in
+const result = numbers.filter( number => number%2 == 0);
+console.log(result.length);
 }
