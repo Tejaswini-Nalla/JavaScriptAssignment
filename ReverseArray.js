@@ -9,4 +9,7 @@ function reverseArray(values) {
 {
     let numbers = [1,2,5,6,8,12,34,5];
     console.log(reverseArray(numbers));
+
+    //using built-in functions
+    console.log(numbers.reverse());
 }
