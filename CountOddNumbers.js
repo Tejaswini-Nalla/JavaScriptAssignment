@@ -14,4 +14,10 @@ function countOddNumbers(numbers) {
 {
 let numbers = [1,2,4,5,7,19,21,10];
 console.log(countOddNumbers(numbers));
+
+//Using built-in functions
+const isOddNumber = number => number%2 != 0;
+const result = numbers.filter(isOddNumber);
+console.log(result.length);
+
 }
