@@ -19,3 +19,5 @@ var numbers = [1,2,3,4,5,6,7,8,9,10];
 var evenNumbers = [];
 numbers.forEach(checkEvenNum);
 displayEvenNumbers();
+
+//Using in-built functions

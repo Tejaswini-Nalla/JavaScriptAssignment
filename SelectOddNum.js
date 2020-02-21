@@ -19,3 +19,7 @@ var numbers = [1,2,3,4,5,6,7,8,9];
 var oddNumbers = [];
 numbers.forEach(checkOddNum);
 displayOddNumbers();
+
+//using in-built functions
+const isOddNumber = number => number%2 != 0;
+console.log(numbers.filter(isOddNumber));
