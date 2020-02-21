@@ -21,3 +21,5 @@ numbers.forEach(checkEvenNum);
 displayEvenNumbers();
 
 //Using in-built functions
+const isEvenNumber = number => number%2 == 0;
+console.log(numbers.filter(isEvenNumber));
