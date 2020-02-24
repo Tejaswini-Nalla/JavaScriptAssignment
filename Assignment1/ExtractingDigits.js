@@ -8,7 +8,8 @@ function extractDigits(number) {
     return digits.reverse();
 }
 
-{
-    let number = 2014;
-    console.log(extractDigits(number));
+function main() {
+    console.log(extractDigits(2014));
 }
+
+main()
