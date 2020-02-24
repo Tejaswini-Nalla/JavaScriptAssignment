@@ -6,6 +6,8 @@ function checkDescending(numbers) {
     return true;
 }
 
-const numbers = [4,2,1];
-var result = checkDescending(numbers);
-console.log(result);
+function main() {
+    console.log(checkDescending([4,3,1]));
+}
+
+main();
