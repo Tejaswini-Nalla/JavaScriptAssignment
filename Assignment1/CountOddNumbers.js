@@ -1,4 +1,4 @@
-function isOddNumber(number) {
+/*function isOddNumber(number) {
     return number%2 != 0;
 }
 
@@ -9,15 +9,17 @@ function countOddNumbers(numbers) {
             count++;
     }
     return count;
+}*/
+
+function isOddNumber(number) {
+    return number%2 != 0
 }
 
-{
-let numbers = [1,2,4,5,7,19,21,10];
-console.log(countOddNumbers(numbers));
-
-//Using built-in functions
-const isOddNumber = number => number%2 != 0;
-const result = numbers.filter(isOddNumber);
-console.log(result.length);
-
+function main() {
+    //console.log(countOddNumbers([1,2,4,5,7,19,21,10,8]));
+    //using built-in
+    const result = [1,2,4,5,7,19,21,10,8].filter(isOddNumber);
+    console.log(result.length);
 }
+
+main()
