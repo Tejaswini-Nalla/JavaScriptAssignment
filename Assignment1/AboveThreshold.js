@@ -12,6 +12,7 @@ function countNumbersAboveThreshold(numbers, thresholdValue) {
     const result = numbers.filter(checkValueAboveThreshold);
     return result.length;
 }
+
 function main() {
     console.log(countValuesAboveThreshold([2,41,7,9,10,34,25,33], 5));
     //Using inbuilt function
