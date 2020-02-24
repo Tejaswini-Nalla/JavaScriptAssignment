@@ -1,4 +1,4 @@
-function isEvenNumber(number) {
+/*function isEvenNumber(number) {
     return number%2 == 0;
 }
 
@@ -9,13 +9,17 @@ function countEvenNumbers(numbers) {
             count++;
     }
     return count;
+}*/
+
+function isEvenNumber(number) {
+    return number%2 == 0
 }
 
-{
-let numbers = [1,2,4,5,7,19,21,10,8];
-console.log(countEvenNumbers(numbers));
-
-//using built-in
-const result = numbers.filter( number => number%2 == 0);
-console.log(result.length);
+function main() {
+    //console.log(countEvenNumbers([1,2,4,5,7,19,21,10,8]));
+    //using built-in
+    const result = [1,2,4,5,7,19,21,10,8].filter(isEvenNumber);
+    console.log(result.length);
 }
+
+main()

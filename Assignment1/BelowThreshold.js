@@ -14,9 +14,9 @@ function countNumbersBelowThreshold(numbers, thresholdValue) {
 }
 
 function main() {
-    console.log(countValuesBelowThreshold([2,41,7,9,10,34,25,33], 5));
+    console.log(countValuesBelowThreshold([2,41,7,9,10,34,25,33], 10));
     //Using inbuilt function
-    console.log(countNumbersBelowThreshold([2,41,7,9,10,34,25,33], 5));
+    console.log(countNumbersBelowThreshold([2,41,7,9,10,34,25,33], 10));
 }
 
 main();
