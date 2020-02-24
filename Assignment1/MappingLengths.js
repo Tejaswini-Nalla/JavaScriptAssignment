@@ -3,9 +3,9 @@ function appendLength(len) {
 }
 
 function generateLength(name) {
-    let len = name.length;
-    appendLength(len);
+    appendLength(name.len);
 }
+
 
 {
     var names = ["teju","is","a","good","girl"];
