@@ -1,16 +1,27 @@
-function findAverage(numbers) {
-    return sum / numbers.length;
+function findAverage(arrayLength, sum) {
+    return sum / arrayLength;
 }
 
-function addNum(number) {
-    sum = sum + number;
+function addNumbers(numbers) {
+    let sum = 0;
+    for(let index = 0; index < numbers.length; index++) {
+        sum = sum + numbers[index];
+    }
+    return sum;
 }
 
-var numbers = [1,2,3,4,5,6,7,8,9];
-var sum = 0;
-numbers.forEach(addNum);
-console.log(findAverage(numbers))
+function reducer(accumulator, currentValue){
+    return accumulator + currentValue;
+}
+function main() {
+    var numbers = [1,2,3,4,5,6,7,8,9];
+    let sum = addNumbers(numbers);
+    console.log(findAverage(numbers.length, sum))
+    //Using inbuilt function
+    const result = numbers.reduce(reducer);
+    console.log(result/numbers.length);
+}
 
-//Using inbuilt function
-const result = numbers.reduce((acc,curvalue) => acc + curvalue);
-console.log(result/numbers.length);
+main();
+
+
