@@ -1,7 +1,10 @@
-function findMinNumber() {
+function findMinNumber(numbers) {
     return Math.min.apply(this,numbers);
 }
 
-var numbers = [1,26,3,5]
-console.log(findMinNumber());
+function main() {
+    console.log(findMinNumber([1,26,3,5]));
+}
+
+main();
  
