@@ -7,14 +7,15 @@ function countValuesAboveThreshold(numbers, thresholdValue) {
     return count;
 }
 
+function countNumbersAboveThreshold(numbers, thresholdValue) {
+    const checkValueAboveThreshold = number => number > thresholdValue;
+    const result = numbers.filter(checkValueAboveThreshold);
+    return result.length;
+}
 function main() {
     console.log(countValuesAboveThreshold([2,41,7,9,10,34,25,33], 5));
     //Using inbuilt function
-    const numbers = [2,41,7,9,10,34,25,33];
-    const thresholdValue = 5;
-    const checkValueAboveThreshold = number => number > thresholdValue;
-    const result = numbers.filter(checkValueAboveThreshold);
-    console.log(result.length);
+    console.log(countNumbersAboveThreshold([2,41,7,9,10,34,25,33], 5));
 }
 
 main();
