@@ -6,7 +6,10 @@ function checkAscending(numbers) {
     return true;
 }
 
-const numbers = [1,2,3,4];
-var result = checkAscending(numbers);
-console.log(result);
+function main() {
+    console.log(checkAscending([1,2,3,4]));
+}
+
+main();
+
 
