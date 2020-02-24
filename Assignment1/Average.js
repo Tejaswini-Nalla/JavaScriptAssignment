@@ -13,6 +13,7 @@ function addNumbers(numbers) {
 function reducer(accumulator, currentValue){
     return accumulator + currentValue;
 }
+
 function main() {
     var numbers = [1,2,3,4,5,6,7,8,9];
     let sum = addNumbers(numbers);
