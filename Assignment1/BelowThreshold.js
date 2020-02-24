@@ -1,4 +1,4 @@
-function getCount(numbers, thresholdValue) {
+function countValuesBelowThreshold(numbers, thresholdValue) {
     var count = 0;
     for(index = 0; index < numbers.length; index++) {
         if(numbers[index] < thresholdValue)
@@ -7,12 +7,15 @@ function getCount(numbers, thresholdValue) {
     return count;
 }
 
-{
-    let numbers = [2,41,7,9,10,34,25,33];
-    let thresholdValue = 10;
-    console.log(getCount(numbers,thresholdValue));
-
-    //Using builtin functions
-    const result = numbers.filter(number => number < thresholdValue);
+function main() {
+    console.log(countValuesBelowThreshold([2,41,7,9,10,34,25,33], 10));
+    //Using inbuilt function
+    const numbers = [2,41,7,9,10,34,25,33];
+    const thresholdValue = 10;
+    const checkValueBelowThreshold = number => number < thresholdValue;
+    const result = numbers.filter(checkValueBelowThreshold);
     console.log(result.length);
 }
+
+main();
+
